@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <!-- <ion-title>
+      Tab 2
+    </ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 2</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+<div class="">
+  <div style="padding: 10%;">
+ 
+
+
+<div *ngIf="currentQuestion">
+   
+    <p> <label style="font-weight: bold;">Q.{{currentQuestion.id}}</label> {{currentQuestion.content}}</p>
+   
+      
+        <div *ngFor="let option of currentQuestion.options">
+
+        <ion-radio-group [allowEmptySelection]="true"  (click)="selectedOptionId=option.id"  >       
+        <ion-radio [value]="option.id" style="display: flex;">
+          <label style="font-weight: bold;">{{option.id}}.</label> &nbsp;
+          {{option.content}}
+        </ion-radio><br />       
+      </ion-radio-group><br>
+      </div> <br><br>
+      <div>
+        <div *ngIf="currentQuestionNo==quizinfo.questions.length-1">
+          <ion-button expand="block" (click)="submit()">Submit</ion-button>
+        </div>
+        <div *ngIf="!(currentQuestionNo==quizinfo.questions.length-1)">
+        <ion-button expand="block" (click)="next()">Save & Next</ion-button>
+      </div>
+      </div>      
+    
+  
+  
+  
+  </div>
+  </div>
+
+</div>
+
+</ion-content>

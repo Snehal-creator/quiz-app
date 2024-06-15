@@ -1,0 +1,7 @@
+{
+  "name": "MCQ_Test_App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

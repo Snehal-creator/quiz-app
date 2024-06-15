@@ -1,0 +1,135 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "content": "What is JavaScript?",
+      "marks": 1,
+      "negativeMarks": 1,
+      "options": [
+        {
+          "id": "a",
+          "content": "JavaScript is a scripting language",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "content": "JavaScript is an assembly language",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "content": " JavaScript is a compiled language",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "content": "The 'function' and 'var' are known as:",
+      "marks": 1,
+      "negativeMarks": 1,
+      "options": [
+        {
+          "id": "a",
+          "content": "Keywords",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "content": "Data types",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "content": "Declaration statements",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "content": "Which one of the following is an ternary operator:",
+      "marks": 1,
+      "negativeMarks": 1,
+      "options": [
+        {
+          "id": "a",
+          "content": "?",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "content": "+",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "content": "-",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "quizs": [
+    {
+      "id": "1",
+      "name": "Javascript Quiz",
+      "code": "js01",
+      "questions": [
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "quizResults": [
+    {
+      "id": "11cd",
+      "name": " ",
+      "quizId": "1",
+      "response": [
+        {
+          "questionId": "1",
+          "answerOptionId": "a"
+        },
+        {
+          "questionId": "2",
+          "answerOptionId": "a"
+        },
+        {
+          "questionId": "3",
+          "answerOptionId": "a"
+        }
+      ],
+      "correct": 2,
+      "inCorrect": 1,
+      "unAttempt": 0,
+      "score": 1,
+      "percentage": 33
+    },
+    {
+      "id": "8d3b",
+      "name": " ",
+      "quizId": "1",
+      "response": [
+        {
+          "questionId": "1",
+          "answerOptionId": "a"
+        },
+        {
+          "questionId": "2",
+          "answerOptionId": "b"
+        },
+        {
+          "questionId": "3",
+          "answerOptionId": "c"
+        }
+      ],
+      "correct": 1,
+      "inCorrect": 2,
+      "unAttempt": 0,
+      "score": -1,
+      "percentage": -33
+    }
+  ]
+}

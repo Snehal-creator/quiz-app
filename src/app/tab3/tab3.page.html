@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <!-- <ion-toolbar>
+    <ion-title>
+      Tab 3
+    </ion-title>
+  </ion-toolbar> -->
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <!-- <ion-title size="large">Tab 3</ion-title> -->
+    </ion-toolbar>
+  </ion-header>
+  <div style="text-align: center;padding: 20px;"  *ngIf="quizResult">
+    <p>Your Result</p>
+  
+    <div style="text-align: left;">
+    
+      <table border="1"  class="center" style="width: 100%; ">
+        <tr>
+          <td class="col">Correct</td>
+          <td class="col">{{quizResult.correct}}</td>
+        </tr>
+        <tr>
+          <td class="col">Incorrect</td>
+          <td class="col">{{quizResult.inCorrect}}</td>
+        </tr>  
+         <tr>
+          <td class="col">Unattempt</td>
+          <td class="col">{{quizResult.unAttempt}}</td> 
+         </tr>
+        <tr>
+          <td class="col">Score</td>
+          <td class="col">{{quizResult.score}}</td>  
+        </tr>  
+      </table>
+    </div>
+  </div><br><br>
+  <div style="text-align: center;">
+  <ion-button  routerLink="/tabs/tab1">Done</ion-button>
+</div>
+</ion-content>
